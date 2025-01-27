@@ -1,0 +1,56 @@
+doctype html
+html 
+    head 
+     title Dance Academy
+     style 
+       include ../static/style.css 
+     
+    body
+     nav#navbar
+      ul 
+        div.logo
+            img(src="/static/img3.jpg") 
+        | HDF
+
+        li #[a( href='/') Home] 
+        li #[a( href='/') About]
+        li #[a(href='/') services] 
+        li #[a(href='/') contact Us] 
+        
+     section#introSection
+        
+        h1 welcome to the dance academy
+        h1 we are the best dance academy in the city
+        div Eate Sleep Dance Reapeat
+     section#serviceSection
+        h1 Our missions 
+        .card-container
+          div.card 
+            h3 Dance Perfection
+            div.card-img
+            img(src="/static/img1.jpg")
+            div.card-body 
+             p we are the best dance academy in the city
+          div.card 
+            h3 Dance the way you like
+            div.card-img
+            img(src="/static/img2.jpg")
+            div.card-body 
+             p we are the best dance academy in the city
+          div.card 
+            h3 Expert teachnique
+            div.card-img
+            img(src="/static/img3.jpg")
+            div.card-body 
+             p we are the best dance academy in the city
+     section#sponserSection
+      | our sponsers
+      div.sponser 
+           img(src="/static/img8.jpeg", alt="")
+           img(src="/static/img9.jpeg", alt="")
+           img(src="/static/img10.jpeg", alt="")
+           img(src="/static/img11.jpeg", alt="")
+     section#footerSection
+     script 
+      include ../static/index.js 
+

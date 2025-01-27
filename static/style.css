@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #navbar{
+    position: fixed;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(232, 169, 8);
+  }
+  
+
+  .logo{
+    display: flex;
+    color: white;
+    margin: 0px 14px;
+    height:60px;
+    background-color: white;
+  }
+ 
+  .logo img{
+    filter: invert(1);
+    background-color: white;
+  }
+  
+  
+
+  #navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    color: black;
+  }
+  
+  #navbar li {
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  #navbar li a {
+    text-decoration: none;
+    padding: 20px 30px;
+  }
+  
+  #navbar li a:hover {
+    color: brown;
+  }
+  
+  #introSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("/static/img.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #introSection div {
+    color: rgb(92, 6, 6);
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  #introSection h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(242, 0, 0);
+  }
+
+  #serviceSection{
+    background-color: rgb(42, 84, 84);
+    height: 100vh;
+   
+    
+  }
+
+  #serviceSection h1{
+    color:white;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .card {
+    border: 2px solid black;
+    color: black;
+    width: 30%;
+    max-width: 500px;
+  
+    height: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card img{
+  width: 70%;
+  height:70%;
+  object-fit: inherit;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  #sponserSection{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(253, 236, 236);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+  }
+
+  .sponser img{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+  }
+  #footerSection{
+    background-color: rgb(92, 6, 6);
+    width: 100%;
+    height: auto;
+  }
