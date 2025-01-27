@@ -1,0 +1,64 @@
+extends base.pug 
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style 
+    include ../static/style.css  
+
+block content
+  nav#navbar
+    ul 
+      div.logo
+        img(src="/static/img3.jpg")
+        | HDF
+
+      li #[a(href='/') Home]
+      li #[a(href='/') About]
+      li #[a(href='/') Services]
+      li #[a(href='/contact') Contact Us]
+
+  section#introSection
+    h1 Welcome to the Dance Academy
+    h1 We are the best dance academy in the city
+    div Eate Sleep Dance Repeat
+
+  section#serviceSection
+    h1 Our Missions
+    .card-container
+      div.card 
+        h3 Dance Perfection
+        div.card-img
+          img(src="/static/img1.jpg")
+        div.card-body 
+          p We are the best dance academy in the city
+
+      div.card 
+        h3 Dance the Way You Like
+        div.card-img
+          img(src="/static/img2.jpg")
+        div.card-body 
+          p We are the best dance academy in the city
+
+      div.card 
+        h3 Expert Technique
+        div.card-img
+          img(src="/static/img3.jpg")
+        div.card-body 
+          p We are the best dance academy in the city
+
+  section#sponserSection
+    | Our Sponsors
+    div.sponsor
+      img(src="/static/img8.jpeg", alt="Sponsor 1")
+      img(src="/static/img9.jpeg", alt="Sponsor 2")
+      img(src="/static/img10.jpeg", alt="Sponsor 3")
+      img(src="/static/img11.jpeg", alt="Sponsor 4")
+
+  section#footerSection
+    footer#footer
+    
+
+block scripts
+  script(src='/static/index.js')

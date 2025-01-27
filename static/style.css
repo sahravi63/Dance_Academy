@@ -6,8 +6,10 @@
   #navbar{
     position: fixed;
     width: 100%;
-    padding: 10px 15px;
+    height: 70px;
+    padding: 5px;
     background-color: rgb(232, 169, 8);
+    z-index: 1;
   }
   
 
@@ -128,12 +130,17 @@
     font-weight: bolder;
   }
 
+  #sponserSection img{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+  }
   .sponser img{
     width: 300px;
     height: auto;
     padding: 20px;
   }
-  #footerSection{
+  #footer{
     background-color: rgb(92, 6, 6);
     width: 100%;
     height: auto;

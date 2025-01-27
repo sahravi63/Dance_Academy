@@ -1,0 +1,38 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style 
+    include ../static/style.css
+    include ../static/contactstyle.css
+
+block content
+ div.container
+  h1 Contact Us
+  p Please fill out the form below to get in touch.
+
+  form(action="/contact",class='myform'  method="post")
+    label(for="name")
+    input(type="text", class='myinput' name="name", placeholder="Enter your name", required)
+    br
+
+    label(for="email")
+    input(type="email", class='myinput' name="email", placeholder="Enter your email", required)
+    br
+
+    label(for="phone") 
+    input(type="number", class='myinput' name="phone number", placeholder="Enter your phone number", required)
+    br
+
+    label(for="address")
+    input(type="text", class='myinput' name="address", placeholder="Enter your address", required)
+    br
+
+    label(for="message")
+    textarea(name="message", class='myinput' placeholder="Enter your message", required)
+    br
+
+    button(type="submit" class='btn') Submit
+

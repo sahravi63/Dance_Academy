@@ -1,0 +1,19 @@
+doctype html
+html 
+  head 
+    title Dance Academy
+    block scripts
+    block style
+  
+  body 
+    block content
+
+    footer#footer
+      | © 2020 Dance Academy.com | All rights reserved
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style 
+    include ../static/style.css
