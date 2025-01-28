@@ -1,0 +1,53 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style 
+    include ../static/style.css
+    include ../static/contactstyle.css
+
+block content
+  header
+    nav
+      ul
+        li
+          a(href="/") Home
+        li
+          a(href="/about") About Us
+        li
+          a(href="/services") Services
+        li
+          a(href="/contact") Contact Us
+    h1 Our Dance Services
+
+  section#services
+    h2 Explore Our Dance Classes
+    p We offer a variety of dance classes to suit all ages and skill levels. Whether you're a beginner or an advanced dancer, we have something for everyone!
+    
+    div.container
+      each service, index in services
+        article.service-item
+          h3 #{service.name}
+          img(src=`/images/${service.image}` alt=`${service.name} image`)
+          p #{service.description}
+          ul
+            li
+              strong Instructors: 
+              span #{service.instructors}
+            li
+              strong Timings: 
+              span #{service.timings}
+            li
+              strong Fees: 
+              span #{service.fees}
+            li
+              strong Duration: 
+              span #{service.duration}
+
+  footer
+    p &copy; #{year} Dance Academy | All Rights Reserved
+    p Contact us: email@example.com | Phone: +123 456 7890
+
+  script(src="/javascripts/main.js")

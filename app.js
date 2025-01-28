@@ -52,6 +52,14 @@ app.post('/contact', (req, res) => {
     });
 });
 
+app.get('/services', (req, res) => {
+    const services = [
+        { name: 'Ballet', image: 'ballet.jpg', description: 'Classical ballet dance class', instructors: 'John Doe', timings: 'Mon-Fri 6PM', fees: '$50', duration: '1 hour' },
+        { name: 'Hip-Hop', image: 'hiphop.jpg', description: 'Energetic hip-hop dance class', instructors: 'Jane Smith', timings: 'Sat-Sun 10AM', fees: '$40', duration: '1 hour' },
+        // Add more services if needed
+    ];
+    res.status(200).render('services.pug', { services });
+});
 
 app.listen(port,()=>{
     console.log(`the application started successfully on port ${port}`);
